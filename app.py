@@ -34,7 +34,8 @@ app.layout = html.Div([
             {'label': 'Original 256 (Population level)', 'value': 'gda'},
             {'label': 'Microhaplotype', 'value': 'mh'},
             {'label': 'Kidd 55', 'value': 'k55'},
-            {'label': 'FrogKB', 'value': 'frog'}
+            {'label': 'FrogKB', 'value': 'frog'},
+            {'label': 'Toms Run (10/25)', 'value': 't1024'}
         ]
     ),
 ])
@@ -56,7 +57,8 @@ def update_figure(chrom_selection, snp_set):
                  'mh':'Overlaps With Microhap SNPs',
                  'k55':'Overlaps With Kidd 55 SNPs',
                  'frog':'Overlaps With FrogKB SNPs',
-                 'pos': 'Chromosomal Position'})
+                 'pos': 'Chromosomal Position',
+                 't1024': 'Toms Run on 10/25'})
 
     fig.update_layout(transition_duration=500)
 
